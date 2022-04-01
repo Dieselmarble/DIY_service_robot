@@ -1,0 +1,6 @@
+<launch>
+
+ <include file="$(find xtlidar_driver)/launch/XTLIDAR_C25.launch"/>
+
+</launch>
+

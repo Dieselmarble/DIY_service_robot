@@ -1,0 +1,9 @@
+<launch>
+  <!-- 启动USB摄像头驱动包 -->
+  <include file="$(find xtark_driver)/launch/xtark_bringup.launch"/>
+  <include file="$(find xtark_driver)/launch/xtark_lidar.launch"/>
+  <include file="$(find xtark_driver)/launch/xtark_camera_rs.launch"/>
+
+  <node name="self_check" pkg="xtark_driver" type="self_check_rs.py" output="screen" required="true"/>
+
+</launch>
