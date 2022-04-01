@@ -1,0 +1,10 @@
+<launch>
+
+  <arg name="debug_directory" value="$(env HELLO_FLEET_PATH)/debug/"/>
+  <!-- command -->
+  <node name="handle_command" pkg="robot_manipulation" type="handle_command.py" output="screen" >
+    <param name="debug_directory" type="string" value="$(arg debug_directory)"/>
+  </node>
+  <!-- -->
+    
+</launch>
