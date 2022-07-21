@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-    <arg name="device" default="/dev/video0" />
-    <arg name="resolution" default="480p"/>
-	 <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
-    <node name="web_video_server" pkg="web_video_server" type="web_video_server" output="screen"/>
-</launch>
-
